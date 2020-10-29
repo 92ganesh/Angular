@@ -1,0 +1,36 @@
+<div>
+  <table border=1px>
+    <tr >
+      <td colspan="4"><p textContent={{display}}></p></td>
+    </tr>
+    <tr>
+        <td><button  (click)="buttonPressed($event)" value="7">7</button></td>
+        <td><button  (click)="buttonPressed($event)" value="8">8</button></td>
+        <td><button  (click)="buttonPressed($event)" value="9">9</button></td>
+        <td><button  (click)="buttonPressed($event)" value="*">*</button></td>
+    </tr>
+    
+    
+    <tr>
+        <td><button  (click)="buttonPressed($event)" value="4">4</button></td>   
+        <td><button  (click)="buttonPressed($event)" value="5">5</button></td>   
+        <td><button  (click)="buttonPressed($event)" value="6">6</button></td>   
+        <td><button  (click)="buttonPressed($event)" value="/">/</button></td>
+    </tr>
+    
+    
+    <tr>
+		<td><button  (click)="buttonPressed($event)" value="1">1</button></td>   
+		<td><button  (click)="buttonPressed($event)" value="2">2</button></td>   
+		<td><button  (click)="buttonPressed($event)" value="3">3</button></td>   
+		<td><button  (click)="buttonPressed($event)" value="+">+</button></td>
+    </tr>
+    
+    
+    <tr>
+      <td><button  mat-raised-button color="primary" (click)="buttonPressed($event)" value="0">0</button></td>   
+      <td colspan="2"><button (click)="buttonPressed($event)" value="=">=</button></td>  
+      <td><button mat-raised-button color="primary" (click)="buttonPressed($event)" value="-">-</button></td>
+    </tr>
+  </table>
+</div>
