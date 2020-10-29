@@ -1,0 +1,30 @@
+<div>
+  <div>
+    <form (ngSubmit)="addEmployee(a)" #a="ngForm"  class="form-inputs">
+      Emp id:<input type="text" ngModel name="empId" required>   <br>  <br>
+      Name: <input type="text" ngModel name="empName" required>  <br>  <br>
+      Email: <input type="email" ngModel name="empEmail" email required>  <br>
+      <input type="submit" value="Add Employee">
+    </form>
+    <br>  <hr> <br>
+
+    <form (ngSubmit)="deleteEmployee(d)" #d="ngForm"  class="form-inputs">
+      Emp id: <input type="text" ngModel name="empId">   <br>  <br>
+      <input type="submit" value="delete Employee">
+    </form>
+    <br>  <hr> <br>
+
+    <button (click)="showAll()"  class="form-inputs">Show all employees</button>
+  </div>
+  <br>  <br>
+  <div class="console">
+    <table>
+      <tr>
+        <th>Emp ID</th><th>Name</th><th>Email</th>
+      </tr>
+      <tr href="#" *ngFor="let emp of employees">
+        <td>{{emp.empId}}</td><td>{{emp.empName}}</td><td>{{emp.empEmail}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

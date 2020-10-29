@@ -1,0 +1,17 @@
+table, th, td  {
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+}
+
+.console{
+    background-color: rgb(216, 228, 50); 
+    width: 100%; 
+    min-height: 200px;
+}
+
+.form-inputs{
+    margin-left:40%;
+}
