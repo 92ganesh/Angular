@@ -1,0 +1,34 @@
+<div>
+    <div>
+      <div>
+        <div>
+          <h3>Artist Directory</h3>
+          <div>
+            <div *ngIf="query"><strong>For:</strong>
+              {{ query }}
+            </div>
+            <input type="text" (keyup)="searchArtists()" [(ngModel)]="query">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button mat-button-raised (click)="searchArtists()">search</button> <br>
+    <div style="left: 0; z-index:10">
+      <div>
+        <div>
+          <div>
+             <a href="#" *ngFor="let artist of artists"
+                (click)="showArtist(artist)"
+                [style.backgroundColor]="artist.highlight ? '#EEE' : '#FFF'">
+
+
+                <app-artist-items  [artist]="artist" ></app-artist-items>
+
+
+                
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
