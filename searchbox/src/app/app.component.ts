@@ -20,7 +20,7 @@ export class AppComponent  implements OnInit  {
     let searchResults = [];
     for(let index=0; index<9; index++){
       if(String(this.allArtists[index].name).toLowerCase().startsWith(this.query.toLowerCase()) ){
-        console.log(String(this.allArtists[index].name));
+        //console.log(String(this.allArtists[index].name));
         searchResults.push(this.allArtists[index]);
       }
     }
